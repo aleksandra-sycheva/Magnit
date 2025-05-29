@@ -15,7 +15,7 @@ public partial class RevenueHistory
 
     public DateOnly Date { get; set; }
 
-    public DateTime TimeStart { get; set; }
+    public DateTimeOffset TimeStart { get; set; }
 
     public DateTimeOffset TimeEnd { get; set; }
 

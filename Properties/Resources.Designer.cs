@@ -63,6 +63,16 @@ namespace magnit.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _upload_iblock_09b_Magnit_M_sign {
+            get {
+                object obj = ResourceManager.GetObject("_upload_iblock_09b_Magnit_M_sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _upload_iblock_e6c_Magnit_main_logo_RU {
             get {
                 object obj = ResourceManager.GetObject("_upload_iblock_e6c_Magnit_main logo_RU", resourceCulture);
