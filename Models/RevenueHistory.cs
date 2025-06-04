@@ -15,9 +15,9 @@ public partial class RevenueHistory
 
     public DateOnly Date { get; set; }
 
-    public DateTimeOffset TimeStart { get; set; }
+    public string TimeStart { get; set; }
 
-    public DateTimeOffset TimeEnd { get; set; }
+    public string TimeEnd { get; set; }
 
     public virtual Employee IdEmployeeNavigation { get; set; } = null!;
 

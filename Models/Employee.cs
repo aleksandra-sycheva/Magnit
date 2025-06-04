@@ -1,8 +1,7 @@
-﻿using magnit.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
-namespace magnit;
+namespace magnit.Models;
 
 public partial class Employee
 {

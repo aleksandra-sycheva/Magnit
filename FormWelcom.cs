@@ -19,6 +19,7 @@ namespace magnit
 
         private void buttonEnter_Click(object sender, EventArgs e)
         {
+            this.Hide();
             FormEnter formEnter = new FormEnter();
             formEnter.ShowDialog();
         }

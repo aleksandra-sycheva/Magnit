@@ -1,4 +1,5 @@
-﻿namespace magnit
+﻿
+namespace magnit
 {
     partial class FormDirector
     {
@@ -30,7 +31,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDirector));
             panelMenu = new Panel();
-            button1 = new Button();
+            buttonUpdate = new Button();
+            buttonExit = new Button();
+            buttonDelete = new Button();
+            buttonRegistration = new Button();
             buttonHistoryRevenue = new Button();
             pictureBox1 = new PictureBox();
             buttonEmployee = new Button();
@@ -44,29 +48,78 @@
             // 
             // panelMenu
             // 
-            panelMenu.Controls.Add(button1);
+            panelMenu.Controls.Add(buttonUpdate);
+            panelMenu.Controls.Add(buttonExit);
+            panelMenu.Controls.Add(buttonDelete);
+            panelMenu.Controls.Add(buttonRegistration);
             panelMenu.Controls.Add(buttonHistoryRevenue);
             panelMenu.Controls.Add(pictureBox1);
             panelMenu.Controls.Add(buttonEmployee);
             panelMenu.Dock = DockStyle.Left;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(348, 537);
+            panelMenu.Size = new Size(348, 710);
             panelMenu.TabIndex = 0;
             // 
-            // button1
+            // buttonUpdate
             // 
-            button1.Anchor = AnchorStyles.None;
-            button1.BackColor = Color.Red;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Candal", 16F, FontStyle.Bold);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(12, 357);
-            button1.Name = "button1";
-            button1.Size = new Size(330, 93);
-            button1.TabIndex = 4;
-            button1.Text = "Зарегистрировать сотрудника";
-            button1.UseVisualStyleBackColor = false;
+            buttonUpdate.Anchor = AnchorStyles.None;
+            buttonUpdate.BackColor = Color.Red;
+            buttonUpdate.FlatStyle = FlatStyle.Flat;
+            buttonUpdate.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonUpdate.ForeColor = Color.White;
+            buttonUpdate.Location = new Point(12, 478);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(330, 93);
+            buttonUpdate.TabIndex = 7;
+            buttonUpdate.Text = "Обновить данные о сотруднике";
+            buttonUpdate.UseVisualStyleBackColor = false;
+            buttonUpdate.Click += buttonUpdate_Click;
+            // 
+            // buttonExit
+            // 
+            buttonExit.Anchor = AnchorStyles.None;
+            buttonExit.BackColor = Color.Red;
+            buttonExit.FlatStyle = FlatStyle.Flat;
+            buttonExit.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonExit.ForeColor = Color.White;
+            buttonExit.Location = new Point(12, 630);
+            buttonExit.Name = "buttonExit";
+            buttonExit.Size = new Size(330, 68);
+            buttonExit.TabIndex = 6;
+            buttonExit.Text = "Выйти";
+            buttonExit.UseVisualStyleBackColor = false;
+            buttonExit.Click += buttonExit_Click;
+            // 
+            // buttonDelete
+            // 
+            buttonDelete.Anchor = AnchorStyles.None;
+            buttonDelete.BackColor = Color.Red;
+            buttonDelete.FlatStyle = FlatStyle.Flat;
+            buttonDelete.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonDelete.ForeColor = Color.White;
+            buttonDelete.Location = new Point(12, 282);
+            buttonDelete.Name = "buttonDelete";
+            buttonDelete.Size = new Size(330, 91);
+            buttonDelete.TabIndex = 5;
+            buttonDelete.Text = "Уволить сотрудника";
+            buttonDelete.UseVisualStyleBackColor = false;
+            buttonDelete.Click += buttonDelete_Click;
+            // 
+            // buttonRegistration
+            // 
+            buttonRegistration.Anchor = AnchorStyles.None;
+            buttonRegistration.BackColor = Color.Red;
+            buttonRegistration.FlatStyle = FlatStyle.Flat;
+            buttonRegistration.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonRegistration.ForeColor = Color.White;
+            buttonRegistration.Location = new Point(12, 379);
+            buttonRegistration.Name = "buttonRegistration";
+            buttonRegistration.Size = new Size(330, 93);
+            buttonRegistration.TabIndex = 4;
+            buttonRegistration.Text = "Зарегистрировать сотрудника";
+            buttonRegistration.UseVisualStyleBackColor = false;
+            buttonRegistration.Click += buttonRegistration_Click;
             // 
             // buttonHistoryRevenue
             // 
@@ -75,12 +128,13 @@
             buttonHistoryRevenue.FlatStyle = FlatStyle.Flat;
             buttonHistoryRevenue.Font = new Font("Candal", 16F, FontStyle.Bold);
             buttonHistoryRevenue.ForeColor = Color.White;
-            buttonHistoryRevenue.Location = new Point(12, 260);
+            buttonHistoryRevenue.Location = new Point(12, 121);
             buttonHistoryRevenue.Name = "buttonHistoryRevenue";
             buttonHistoryRevenue.Size = new Size(330, 59);
             buttonHistoryRevenue.TabIndex = 3;
             buttonHistoryRevenue.Text = "История выручки";
             buttonHistoryRevenue.UseVisualStyleBackColor = false;
+            buttonHistoryRevenue.Click += buttonHistoryRevenue_Click;
             // 
             // pictureBox1
             // 
@@ -99,12 +153,13 @@
             buttonEmployee.FlatStyle = FlatStyle.Flat;
             buttonEmployee.Font = new Font("Candal", 16F, FontStyle.Bold);
             buttonEmployee.ForeColor = Color.White;
-            buttonEmployee.Location = new Point(12, 137);
+            buttonEmployee.Location = new Point(12, 186);
             buttonEmployee.Name = "buttonEmployee";
             buttonEmployee.Size = new Size(330, 90);
             buttonEmployee.TabIndex = 1;
             buttonEmployee.Text = "Подробнее о сотруднике";
             buttonEmployee.UseVisualStyleBackColor = false;
+            buttonEmployee.Click += buttonEmployee_Click;
             // 
             // panelFill
             // 
@@ -112,25 +167,27 @@
             panelFill.Dock = DockStyle.Fill;
             panelFill.Location = new Point(348, 0);
             panelFill.Name = "panelFill";
-            panelFill.Size = new Size(653, 537);
+            panelFill.Size = new Size(687, 710);
             panelFill.TabIndex = 1;
             // 
             // dataGridViewEmployee
             // 
+            dataGridViewEmployee.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridViewEmployee.BackgroundColor = Color.White;
             dataGridViewEmployee.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewEmployee.Dock = DockStyle.Fill;
             dataGridViewEmployee.Location = new Point(0, 0);
             dataGridViewEmployee.Name = "dataGridViewEmployee";
             dataGridViewEmployee.RowHeadersWidth = 51;
-            dataGridViewEmployee.Size = new Size(653, 537);
+            dataGridViewEmployee.ScrollBars = ScrollBars.Vertical;
+            dataGridViewEmployee.Size = new Size(687, 710);
             dataGridViewEmployee.TabIndex = 0;
             // 
             // FormDirector
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1001, 537);
+            ClientSize = new Size(1035, 710);
             Controls.Add(panelFill);
             Controls.Add(panelMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -151,6 +208,9 @@
         private Button buttonHistoryRevenue;
         private PictureBox pictureBox1;
         private Button buttonEmployee;
-        private Button button1;
+        private Button buttonRegistration;
+        private Button buttonDelete;
+        private Button buttonExit;
+        private Button buttonUpdate;
     }
 }

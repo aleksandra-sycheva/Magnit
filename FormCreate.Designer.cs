@@ -134,6 +134,8 @@
             // 
             // dateTimePickerTimeStart
             // 
+            dateTimePickerTimeStart.Format = DateTimePickerFormat.Time;
+            dateTimePickerTimeStart.ShowUpDown = true;
             dateTimePickerTimeStart.Location = new Point(190, 230);
             dateTimePickerTimeStart.Name = "dateTimePickerTimeStart";
             dateTimePickerTimeStart.Size = new Size(358, 27);
@@ -163,6 +165,8 @@
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Format = DateTimePickerFormat.Time;
+            dateTimePicker1.ShowUpDown = true;
             dateTimePicker1.Location = new Point(190, 263);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(358, 27);
@@ -180,6 +184,7 @@
             buttonSave.TabIndex = 32;
             buttonSave.Text = "Сохранить";
             buttonSave.UseVisualStyleBackColor = false;
+            buttonSave.Click += ButtonSave_Click;
             // 
             // FormCreate
             // 

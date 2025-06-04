@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSortedList));
             panelMenu = new Panel();
+            buttonUpdate = new Button();
+            buttonCreate = new Button();
+            pictureBox1 = new PictureBox();
             panelFill = new Panel();
             dataGridViewHistoryRevenue = new DataGridView();
-            pictureBox1 = new PictureBox();
-            buttonCreate = new Button();
-            buttonUpdate = new Button();
             panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panelFill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewHistoryRevenue).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panelMenu
@@ -49,28 +49,40 @@
             panelMenu.Dock = DockStyle.Top;
             panelMenu.Location = new Point(0, 0);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(719, 146);
+            panelMenu.Size = new Size(938, 146);
             panelMenu.TabIndex = 0;
             // 
-            // panelFill
+            // buttonUpdate
             // 
-            panelFill.Controls.Add(dataGridViewHistoryRevenue);
-            panelFill.Dock = DockStyle.Fill;
-            panelFill.Location = new Point(0, 146);
-            panelFill.Name = "panelFill";
-            panelFill.Size = new Size(719, 341);
-            panelFill.TabIndex = 1;
+            buttonUpdate.Anchor = AnchorStyles.None;
+            buttonUpdate.BackColor = Color.Red;
+            buttonUpdate.FlatStyle = FlatStyle.Flat;
+            buttonUpdate.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonUpdate.ForeColor = Color.White;
+            buttonUpdate.Location = new Point(587, 25);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(215, 90);
+            buttonUpdate.TabIndex = 4;
+            buttonUpdate.Text = "Обновить";
+            buttonUpdate.UseVisualStyleBackColor = false;
+            buttonUpdate.Visible = false;
+            buttonUpdate.Click += buttonUpdate_Click;
             // 
-            // dataGridViewHistoryRevenue
+            // buttonCreate
             // 
-            dataGridViewHistoryRevenue.BackgroundColor = Color.White;
-            dataGridViewHistoryRevenue.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewHistoryRevenue.Dock = DockStyle.Fill;
-            dataGridViewHistoryRevenue.Location = new Point(0, 0);
-            dataGridViewHistoryRevenue.Name = "dataGridViewHistoryRevenue";
-            dataGridViewHistoryRevenue.RowHeadersWidth = 51;
-            dataGridViewHistoryRevenue.Size = new Size(719, 341);
-            dataGridViewHistoryRevenue.TabIndex = 0;
+            buttonCreate.Anchor = AnchorStyles.None;
+            buttonCreate.BackColor = Color.Red;
+            buttonCreate.FlatStyle = FlatStyle.Flat;
+            buttonCreate.Font = new Font("Candal", 16F, FontStyle.Bold);
+            buttonCreate.ForeColor = Color.White;
+            buttonCreate.Location = new Point(301, 25);
+            buttonCreate.Name = "buttonCreate";
+            buttonCreate.Size = new Size(211, 90);
+            buttonCreate.TabIndex = 3;
+            buttonCreate.Text = "Добавить";
+            buttonCreate.UseVisualStyleBackColor = false;
+            buttonCreate.Visible = false;
+            buttonCreate.Click += buttonCreate_Click;
             // 
             // pictureBox1
             // 
@@ -82,49 +94,42 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // buttonCreate
+            // panelFill
             // 
-            buttonCreate.Anchor = AnchorStyles.None;
-            buttonCreate.BackColor = Color.Red;
-            buttonCreate.FlatStyle = FlatStyle.Flat;
-            buttonCreate.Font = new Font("Candal", 16F, FontStyle.Bold);
-            buttonCreate.ForeColor = Color.White;
-            buttonCreate.Location = new Point(182, 25);
-            buttonCreate.Name = "buttonCreate";
-            buttonCreate.Size = new Size(211, 90);
-            buttonCreate.TabIndex = 3;
-            buttonCreate.Text = "Добавить";
-            buttonCreate.UseVisualStyleBackColor = false;
+            panelFill.Controls.Add(dataGridViewHistoryRevenue);
+            panelFill.Dock = DockStyle.Fill;
+            panelFill.Location = new Point(0, 146);
+            panelFill.Name = "panelFill";
+            panelFill.Size = new Size(938, 341);
+            panelFill.TabIndex = 1;
             // 
-            // buttonUpdate
+            // dataGridViewHistoryRevenue
             // 
-            buttonUpdate.Anchor = AnchorStyles.None;
-            buttonUpdate.BackColor = Color.Red;
-            buttonUpdate.FlatStyle = FlatStyle.Flat;
-            buttonUpdate.Font = new Font("Candal", 16F, FontStyle.Bold);
-            buttonUpdate.ForeColor = Color.White;
-            buttonUpdate.Location = new Point(458, 25);
-            buttonUpdate.Name = "buttonUpdate";
-            buttonUpdate.Size = new Size(215, 90);
-            buttonUpdate.TabIndex = 4;
-            buttonUpdate.Text = "Обновить";
-            buttonUpdate.UseVisualStyleBackColor = false;
+            dataGridViewHistoryRevenue.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewHistoryRevenue.BackgroundColor = Color.White;
+            dataGridViewHistoryRevenue.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewHistoryRevenue.Dock = DockStyle.Fill;
+            dataGridViewHistoryRevenue.Location = new Point(0, 0);
+            dataGridViewHistoryRevenue.Name = "dataGridViewHistoryRevenue";
+            dataGridViewHistoryRevenue.RowHeadersWidth = 51;
+            dataGridViewHistoryRevenue.Size = new Size(938, 341);
+            dataGridViewHistoryRevenue.TabIndex = 0;
             // 
             // FormSortedList
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(719, 487);
+            ClientSize = new Size(938, 487);
             Controls.Add(panelFill);
             Controls.Add(panelMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormSortedList";
             Text = "Отсортированный список";
             panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panelFill.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridViewHistoryRevenue).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 

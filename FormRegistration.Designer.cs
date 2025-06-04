@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegistration));
             labelTypeOfEmployee = new Label();
-            comboBoxTypeOfEmploee = new ComboBox();
+            comboBoxTypeOfEmployee = new ComboBox();
             labelName = new Label();
             textBoxName = new TextBox();
             labelSurname = new Label();
@@ -51,36 +51,38 @@
             textBoxPassword = new TextBox();
             pictureBox1 = new PictureBox();
             buttonRegistration = new Button();
+            labelPhoto = new Label();
+            textBoxPhoto = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // labelTypeOfEmployee
             // 
             labelTypeOfEmployee.AutoSize = true;
-            labelTypeOfEmployee.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelTypeOfEmployee.Font = new Font("Cambria", 12F);
             labelTypeOfEmployee.ForeColor = Color.Black;
             labelTypeOfEmployee.Location = new Point(16, 90);
             labelTypeOfEmployee.Name = "labelTypeOfEmployee";
-            labelTypeOfEmployee.Size = new Size(204, 29);
+            labelTypeOfEmployee.Size = new Size(168, 23);
             labelTypeOfEmployee.TabIndex = 0;
             labelTypeOfEmployee.Text = "Роль сотрудника:";
             // 
-            // comboBoxTypeOfEmploee
+            // comboBoxTypeOfEmployee
             // 
-            comboBoxTypeOfEmploee.FormattingEnabled = true;
-            comboBoxTypeOfEmploee.Location = new Point(224, 90);
-            comboBoxTypeOfEmploee.Name = "comboBoxTypeOfEmploee";
-            comboBoxTypeOfEmploee.Size = new Size(314, 28);
-            comboBoxTypeOfEmploee.TabIndex = 1;
+            comboBoxTypeOfEmployee.FormattingEnabled = true;
+            comboBoxTypeOfEmployee.Location = new Point(224, 90);
+            comboBoxTypeOfEmployee.Name = "comboBoxTypeOfEmployee";
+            comboBoxTypeOfEmployee.Size = new Size(314, 28);
+            comboBoxTypeOfEmployee.TabIndex = 1;
             // 
             // labelName
             // 
             labelName.AutoSize = true;
-            labelName.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelName.Font = new Font("Cambria", 12F);
             labelName.ForeColor = Color.Black;
             labelName.Location = new Point(16, 124);
             labelName.Name = "labelName";
-            labelName.Size = new Size(65, 29);
+            labelName.Size = new Size(53, 23);
             labelName.TabIndex = 2;
             labelName.Text = "Имя:";
             // 
@@ -94,11 +96,11 @@
             // labelSurname
             // 
             labelSurname.AutoSize = true;
-            labelSurname.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelSurname.Font = new Font("Cambria", 12F);
             labelSurname.ForeColor = Color.Black;
             labelSurname.Location = new Point(16, 157);
             labelSurname.Name = "labelSurname";
-            labelSurname.Size = new Size(120, 29);
+            labelSurname.Size = new Size(100, 23);
             labelSurname.TabIndex = 4;
             labelSurname.Text = "Фамилия:";
             // 
@@ -112,11 +114,11 @@
             // labelMiddleName
             // 
             labelMiddleName.AutoSize = true;
-            labelMiddleName.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelMiddleName.Font = new Font("Cambria", 12F);
             labelMiddleName.ForeColor = Color.Black;
             labelMiddleName.Location = new Point(16, 190);
             labelMiddleName.Name = "labelMiddleName";
-            labelMiddleName.Size = new Size(122, 29);
+            labelMiddleName.Size = new Size(99, 23);
             labelMiddleName.TabIndex = 6;
             labelMiddleName.Text = "Отчество:";
             // 
@@ -130,11 +132,11 @@
             // labelDaterOfBirth
             // 
             labelDaterOfBirth.AutoSize = true;
-            labelDaterOfBirth.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelDaterOfBirth.Font = new Font("Cambria", 12F);
             labelDaterOfBirth.ForeColor = Color.Black;
             labelDaterOfBirth.Location = new Point(16, 223);
             labelDaterOfBirth.Name = "labelDaterOfBirth";
-            labelDaterOfBirth.Size = new Size(186, 29);
+            labelDaterOfBirth.Size = new Size(154, 23);
             labelDaterOfBirth.TabIndex = 8;
             labelDaterOfBirth.Text = "Дата рождения:";
             // 
@@ -148,11 +150,11 @@
             // labelResidentialAddress
             // 
             labelResidentialAddress.AutoSize = true;
-            labelResidentialAddress.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelResidentialAddress.Font = new Font("Cambria", 12F);
             labelResidentialAddress.ForeColor = Color.Black;
             labelResidentialAddress.Location = new Point(16, 253);
             labelResidentialAddress.Name = "labelResidentialAddress";
-            labelResidentialAddress.Size = new Size(87, 29);
+            labelResidentialAddress.Size = new Size(69, 23);
             labelResidentialAddress.TabIndex = 10;
             labelResidentialAddress.Text = "Адрес:";
             // 
@@ -166,11 +168,11 @@
             // labelPhone
             // 
             labelPhone.AutoSize = true;
-            labelPhone.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelPhone.Font = new Font("Cambria", 12F);
             labelPhone.ForeColor = Color.Black;
             labelPhone.Location = new Point(16, 289);
             labelPhone.Name = "labelPhone";
-            labelPhone.Size = new Size(118, 29);
+            labelPhone.Size = new Size(93, 23);
             labelPhone.TabIndex = 12;
             labelPhone.Text = "Телефон:";
             // 
@@ -184,11 +186,11 @@
             // labelEmail
             // 
             labelEmail.AutoSize = true;
-            labelEmail.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelEmail.Font = new Font("Cambria", 12F);
             labelEmail.ForeColor = Color.Black;
             labelEmail.Location = new Point(16, 322);
             labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(90, 29);
+            labelEmail.Size = new Size(65, 23);
             labelEmail.TabIndex = 14;
             labelEmail.Text = "Email:";
             // 
@@ -202,11 +204,11 @@
             // labelDateOfEmployment
             // 
             labelDateOfEmployment.AutoSize = true;
-            labelDateOfEmployment.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelDateOfEmployment.Font = new Font("Cambria", 12F);
             labelDateOfEmployment.ForeColor = Color.Black;
             labelDateOfEmployment.Location = new Point(16, 355);
             labelDateOfEmployment.Name = "labelDateOfEmployment";
-            labelDateOfEmployment.Size = new Size(180, 29);
+            labelDateOfEmployment.Size = new Size(152, 23);
             labelDateOfEmployment.TabIndex = 16;
             labelDateOfEmployment.Text = "Дата принятия:";
             // 
@@ -220,11 +222,11 @@
             // labelPassword
             // 
             labelPassword.AutoSize = true;
-            labelPassword.Font = new Font("Candal", 12F, FontStyle.Bold);
+            labelPassword.Font = new Font("Cambria", 12F);
             labelPassword.ForeColor = Color.Black;
             labelPassword.Location = new Point(16, 388);
             labelPassword.Name = "labelPassword";
-            labelPassword.Size = new Size(101, 29);
+            labelPassword.Size = new Size(81, 23);
             labelPassword.TabIndex = 18;
             labelPassword.Text = "Пароль:";
             // 
@@ -253,19 +255,40 @@
             buttonRegistration.FlatStyle = FlatStyle.Flat;
             buttonRegistration.Font = new Font("Candal", 22.2F, FontStyle.Bold);
             buttonRegistration.ForeColor = Color.White;
-            buttonRegistration.Location = new Point(45, 444);
+            buttonRegistration.Location = new Point(49, 466);
             buttonRegistration.Name = "buttonRegistration";
             buttonRegistration.Size = new Size(460, 59);
             buttonRegistration.TabIndex = 21;
-            buttonRegistration.Text = "Зарегистрироваться";
+            buttonRegistration.Text = "Сохранить";
             buttonRegistration.UseVisualStyleBackColor = false;
+            buttonRegistration.Click += buttonRegistration_Click;
+            // 
+            // labelPhoto
+            // 
+            labelPhoto.AutoSize = true;
+            labelPhoto.Font = new Font("Cambria", 12F);
+            labelPhoto.ForeColor = Color.Black;
+            labelPhoto.Location = new Point(16, 422);
+            labelPhoto.Name = "labelPhoto";
+            labelPhoto.Size = new Size(63, 23);
+            labelPhoto.TabIndex = 22;
+            labelPhoto.Text = "Фото:";
+            // 
+            // textBoxPhoto
+            // 
+            textBoxPhoto.Location = new Point(123, 422);
+            textBoxPhoto.Name = "textBoxPhoto";
+            textBoxPhoto.Size = new Size(415, 27);
+            textBoxPhoto.TabIndex = 23;
             // 
             // FormRegistration
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(560, 515);
+            ClientSize = new Size(560, 537);
+            Controls.Add(textBoxPhoto);
+            Controls.Add(labelPhoto);
             Controls.Add(buttonRegistration);
             Controls.Add(pictureBox1);
             Controls.Add(textBoxPassword);
@@ -286,12 +309,12 @@
             Controls.Add(labelSurname);
             Controls.Add(textBoxName);
             Controls.Add(labelName);
-            Controls.Add(comboBoxTypeOfEmploee);
+            Controls.Add(comboBoxTypeOfEmployee);
             Controls.Add(labelTypeOfEmployee);
             ForeColor = Color.CornflowerBlue;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FormRegistration";
-            Text = "Регистрация нового сотрудника";
+            Text = "Регистрация/ Обновление";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -300,7 +323,7 @@
         #endregion
 
         private Label labelTypeOfEmployee;
-        private ComboBox comboBoxTypeOfEmploee;
+        private ComboBox comboBoxTypeOfEmployee;
         private Label labelName;
         private TextBox textBoxName;
         private Label labelSurname;
@@ -321,5 +344,7 @@
         private TextBox textBoxPassword;
         private PictureBox pictureBox1;
         private Button buttonRegistration;
+        private Label labelPhoto;
+        private TextBox textBoxPhoto;
     }
 }

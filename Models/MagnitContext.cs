@@ -70,10 +70,12 @@ public partial class MagnitContext : DbContext
             entity.Property(e => e.Revenue)
                 .HasColumnType("money")
                 .HasColumnName("revenue");
+
             entity.Property(e => e.TimeEnd)
-                .HasColumnType("time with time zone")
                 .HasColumnName("time_end");
-            entity.Property(e => e.TimeStart).HasColumnName("time_start");
+
+            entity.Property(e => e.TimeStart)
+                .HasColumnName("time_start");
 
             entity.HasOne(d => d.IdEmployeeNavigation).WithMany(p => p.RevenueHistories)
                 .HasForeignKey(d => d.IdEmployee)

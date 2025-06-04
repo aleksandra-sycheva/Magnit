@@ -85,6 +85,7 @@
             textBoxPasword.BackColor = Color.White;
             textBoxPasword.Location = new Point(52, 289);
             textBoxPasword.Name = "textBoxPasword";
+            textBoxPasword.PasswordChar = '*';
             textBoxPasword.Size = new Size(348, 27);
             textBoxPasword.TabIndex = 4;
             // 
@@ -100,6 +101,7 @@
             buttonEnter.TabIndex = 5;
             buttonEnter.Text = "Войти";
             buttonEnter.UseVisualStyleBackColor = false;
+            buttonEnter.Click += buttonEnter_Click;
             // 
             // FormEnter
             // 
