@@ -34,14 +34,14 @@ namespace magnit
                 {
                     if (user.IdTypeOfEmployeeNavigation.TypeOfEmployee == "Директор" || user.IdTypeOfEmployeeNavigation.TypeOfEmployee == "Товаровед")
                     {
-                        FormDirector formDirector = new FormDirector(user.IdTypeOfEmployee);
+                        FormEmployeeList formDirector = new FormEmployeeList(user.IdTypeOfEmployee);
                         formDirector.SetRegisterButtonVisible(true);
                         formDirector.Show();
                         this.Close();
                     }
                     else if (user.IdTypeOfEmployeeNavigation.TypeOfEmployee == "Супервайзер")
                     {
-                        FormDirector formDirector = new FormDirector(user.IdTypeOfEmployee);
+                        FormEmployeeList formDirector = new FormEmployeeList(user.IdTypeOfEmployee);
                         formDirector.SetRegisterButtonVisible(false);
                         formDirector.Show();
                         this.Close();

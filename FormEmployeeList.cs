@@ -12,15 +12,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace magnit
 {
-    public partial class FormDirector : Form
+    public partial class FormEmployeeList : Form
     {
         private int _IdTypeOfEmployee;
-        public FormDirector()
+        public FormEmployeeList()
         {
             InitializeComponent();
             LoadEmployees();
         }
-        public FormDirector(int id)
+        public FormEmployeeList(int id)
         {
             InitializeComponent();
             LoadEmployees();

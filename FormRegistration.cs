@@ -92,7 +92,7 @@ namespace magnit
             db.SaveChanges();
             MessageBox.Show("Новый сотрудник успешно зарегистрирован.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
-            FormDirector form = new FormDirector();
+            FormEmployeeList form = new FormEmployeeList();
             form.Show();
         }
 
@@ -114,7 +114,7 @@ namespace magnit
             db.SaveChanges();
             MessageBox.Show("Данные сотрудника успешно обновлены.", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
-            FormDirector form = new FormDirector();
+            FormEmployeeList form = new FormEmployeeList();
             form.Show();
         }
     }

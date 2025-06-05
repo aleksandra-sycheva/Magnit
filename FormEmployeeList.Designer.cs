@@ -1,7 +1,7 @@
 ﻿
 namespace magnit
 {
-    partial class FormDirector
+    partial class FormEmployeeList
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace magnit
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDirector));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmployeeList));
             panelMenu = new Panel();
             buttonUpdate = new Button();
             buttonExit = new Button();

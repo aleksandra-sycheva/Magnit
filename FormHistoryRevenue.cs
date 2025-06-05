@@ -14,8 +14,8 @@ namespace magnit
 {
     public partial class FormHistoryRevenue : Form
     {
-        private FormDirector _backForm;
-        public FormHistoryRevenue(FormDirector backForm)
+        private FormEmployeeList _backForm;
+        public FormHistoryRevenue(FormEmployeeList backForm)
         {
             InitializeComponent();
             _backForm = backForm;

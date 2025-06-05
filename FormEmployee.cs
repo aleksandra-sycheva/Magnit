@@ -15,8 +15,8 @@ namespace magnit
     public partial class FormEmployee : Form
     {
         int _id;
-        FormDirector _backform;
-        public FormEmployee(int id, FormDirector backform)
+        FormEmployeeList _backform;
+        public FormEmployee(int id, FormEmployeeList backform)
         {
             _id = id;
             _backform = backform;
